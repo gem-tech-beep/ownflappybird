@@ -216,12 +216,12 @@ var bird = {
     },
     getDate: function () {
         var d = new Date();
-        var year = d.getFullYear();
-        var month = d.getMonth() + 1;
-        var day = d.getDate();
-        var hour = d.getHours();
-        var minute = d.getMinutes();
-        var second = d.getSeconds();
+        var year = formatNum(d.getFullYear());
+        var month = formatNum(d.getMonth() + 1);
+        var day = formatNum(d.getDate());
+        var hour = formatNum(d.getHours());
+        var minute = formatNum(d.getMinutes());
+        var second = formatNum(d.getSeconds());
 
         return `${year}.${month}.${day} ${hour}:${minute}:${second}`;
     },
